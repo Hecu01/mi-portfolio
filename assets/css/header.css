@@ -9,7 +9,7 @@
 }
 .contenedor{
     
-    background: url("../../img/blog/background.jpeg") no-repeat center/cover;
+    background: url("../img/background.jpeg") no-repeat center/cover;
     background-attachment: fixed;
 }
 
