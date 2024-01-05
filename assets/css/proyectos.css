@@ -1,0 +1,14 @@
+.proyectos-section{
+    background-color: #00a3574f;
+}
+.proyectos-section div .article-proyecto{
+    min-width:400px;
+    max-width:450px;
+
+}
+
+.tec-usadas div div img:hover{
+    transform: scale(1.5);
+
+    cursor:pointer;
+}

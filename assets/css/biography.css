@@ -1,0 +1,76 @@
+@charset "UTF-8";
+#bars:hover {
+  background-color: #0066ff;
+}
+
+/*Biography*/
+.contenedor-principal-biography{
+  background: rgba(0, 119, 128, 0.349);
+  box-shadow: 0px 0px 5px #00fff2;
+  padding: 40px 0px;
+}
+.biography {
+  height: auto;
+  display: flex;
+
+}
+
+
+
+.contenedor-principal-biography .biography .contenedor-biography .presentacion {
+  text-shadow: 2px 2px 1px #000;
+  padding: 50px 35px;
+}
+
+.contenedor-principal-biography .biography .contenedor-biography .presentacion h1 {
+  font-size: 4.5rem;
+  font-weight: 600;
+  color: white;
+}
+
+.contenedor-principal-biography .biography .contenedor-biography .presentacion h2 {
+  font-size: 35px;
+  font-weight: 600;
+  color: beige;
+}
+
+.contenedor-principal-biography .biography .contenedor-biography .presentacion h2 strong {
+  color: cyan;
+}
+
+.contenedor-principal-biography .biography .contenedor-biography .presentacion img {
+  width: 100%;
+}
+
+.contenedor-principal-biography .biography .contenedor-biography p {
+  margin-top: 10px;
+  color: white;
+  font-size: 1.3rem;
+  text-shadow: 1.3px 1.3px 1px #000;
+}
+
+.contenedor-principal-biography .biography .contenedor-biography .presentacion {
+    background-color: rgba(0, 255, 255, 0.1);
+    -webkit-box-shadow: 0px 0px 5px cyan;
+            box-shadow: 0px 0px 5px cyan;
+  }
+/* Responsive desing */
+@media (max-width: 650px) {
+    #programador {
+      /* Tarjeta de presentación con foto con celeste */
+      font-size: 35px;
+      font-weight: 600;
+    }
+    .contenedor-biography {
+      width: 100%;
+    }
+    .contenedor-biography .presentacion {
+      width: 88%;
+      margin: auto;
+    }
+    .contenedor-biography p {
+      width: 80%;
+      margin: auto;
+    }
+  }
+  
