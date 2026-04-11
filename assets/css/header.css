@@ -1,17 +1,48 @@
 
 /* Header / bienvenida*/
 .header{
-    width: 100%;
-    height: 750px;
+    min-height: 90vh;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .contenedor{
-    
     background: url("../img/background.jpeg") no-repeat center/cover;
     background-attachment: fixed;
 }
+
+#container-photo-navigation-pc{
+    display: flex;
+
+    background-color: rgba(0, 0, 0, 0.459);
+    width:700px;
+    height:auto; 
+    padding: 20px; 
+    justify-content: space-around; 
+    border-radius: 20px; 
+    border: 1px solid rgb(0, 238, 255); 
+    align-items: center;
+    margin: 5em 30px;
+}
+#container-photo-navigation-mobile{
+    background-color: rgba(0, 0, 0, 0.459);
+    width:700px;
+    height:auto; 
+    padding: 20px; 
+    justify-content: space-around; 
+    border-radius: 20px; 
+    border: 1px solid rgb(0, 238, 255); 
+    align-items: center;
+    margin: 5em 30px;
+}
+#container-photo-navigation-mobile .right-header a{
+    margin: 5px 45px;
+}
+#container-photo-navigation-mobile .right-header, #container-photo-navigation-mobile .right-header .image-header{
+    margin: 0;
+    padding: 0;
+}
+
 
 .contenedor-maq-de-escribir h1{
     font-style: italic;
@@ -39,7 +70,6 @@
     transform: scale(1.1);
 }
 .image-header{
-    margin-right: 20px;
     display: grid;
     justify-items: center;
 }
@@ -57,8 +87,32 @@
     font-size: 25px;
 }
 
+.header .right-header {
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+}
+.button-nav{
+    display: block;
+    text-align: center;
+    font-weight: 600;
+    padding: 12px;
+    font-size: 17px;
+    border-radius: 10px;
+    margin: 5px 0px;
+    color: rgb(0, 238, 255);
+    background-color: #0000002a;
+    border: 1px solid rgb(0, 238, 255);
+    text-shadow: 1px 1px 1px #000;
+}
+.button-nav:hover{ 
+    color: #fff;
+    background-color: rgba(0, 255, 255, 0.39);
+    box-shadow: 0px 0px 3px rgb(0, 238, 255);
+    
+}
 /* Responsive Header*/
-@media (max-width: 846px){
+/* @media (max-width: 846px){
     .header{
         display: block;
         height: auto;
@@ -66,5 +120,25 @@
     }
     .header div{
         margin: 60px 0px;
+    }
+} */
+
+@media (min-width: 846px){
+    #container-photo-navigation-pc{
+        display: flex; /* Cambiar a display:flex */
+
+    }
+    #container-photo-navigation-mobile{
+        display: none;  /* Cambiar a display:none */
+
+    }
+}
+@media (max-width: 846px){
+    #container-photo-navigation-pc{
+        display: none;
+    }
+    #container-photo-navigation-mobile{
+        display: block;
+
     }
 }
