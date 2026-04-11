@@ -8,6 +8,7 @@
   background: rgba(0, 119, 128, 0.349);
   box-shadow: 0px 0px 5px #00fff2;
   padding: 40px 0px;
+  padding-bottom: 8rem;
 }
 .biography {
   height: auto;
@@ -47,6 +48,7 @@
   color: white;
   font-size: 1.3rem;
   text-shadow: 1.3px 1.3px 1px #000;
+  
 }
 
 .contenedor-principal-biography .biography .contenedor-biography .presentacion {
