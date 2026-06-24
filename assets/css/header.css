@@ -10,19 +10,30 @@
     background: url("../img/background.jpeg") no-repeat center/cover;
     background-attachment: fixed;
 }
-
-#container-photo-navigation-pc{
+@keyframes glow-pulse {
+  0%, 100% {
+    box-shadow: 0 0 6px 1px rgba(0,238,255,0.4), 0 0 20px 2px rgba(0,238,255,0.15);
+    border-color: rgba(0,238,255,0.6);
+  }
+  50% {
+    box-shadow: 0 0 12px 4px rgba(0,238,255,0.9), 0 0 40px 8px rgba(0,238,255,0.35);
+    border-color: rgba(0,238,255,1);
+  }
+}
+#container-photo-navigation-pc {
     display: flex;
-
     background-color: rgba(0, 0, 0, 0.459);
-    width:700px;
-    height:auto; 
-    padding: 20px; 
-    justify-content: space-around; 
-    border-radius: 20px; 
-    border: 1px solid rgb(0, 238, 255); 
+    width: 700px;
+    height: auto;
+    padding: 20px;
+    justify-content: space-around;
+    border-radius: 20px;
+    border: 1px solid rgb(0, 238, 255); /* color inicial */
     align-items: center;
     margin: 5em 30px;
+
+    /* Animación */
+    animation: glow-pulse 2s ease-in-out infinite;
 }
 #container-photo-navigation-mobile{
     background-color: rgba(0, 0, 0, 0.459);
@@ -79,6 +90,7 @@
     box-shadow: 0px 0px 10px rgb(0, 255, 200);
     border-radius: 100%;
     margin-bottom: 15px;
+    
 
 }
 .image-header p{
