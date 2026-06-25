@@ -1,0 +1,153 @@
+<!-- =============================================
+     SECCIÓN: Habilidades / Tecnologías
+     Pegá este bloque en tu HTML donde quieras
+     que aparezca la sección.
+============================================= -->
+
+<section id="habilidades">
+  <h2>Habilidades</h2>
+
+  <div class="skills-grid">
+
+    <!-- Laravel -->
+    <div class="skill-card">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/laravel/laravel-original.svg" alt="Laravel" width="48" height="48">
+      <div class="skill-info">
+        <p class="skill-name">Laravel</p>
+        <p class="skill-desc">Framework PHP para apps web modernas</p>
+      </div>
+    </div>
+
+    <!-- PHP -->
+    <div class="skill-card">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-plain.svg" alt="PHP" width="48" height="48">
+      <div class="skill-info">
+        <p class="skill-name">PHP</p>
+        <p class="skill-desc">Lenguaje backend de servidor web</p>
+      </div>
+    </div>
+
+    <!-- MySQL -->
+    <div class="skill-card">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" alt="MySQL" width="48" height="48">
+      <div class="skill-info">
+        <p class="skill-name">MySQL</p>
+        <p class="skill-desc">Base de datos relacional</p>
+      </div>
+    </div>
+
+    <!-- Bootstrap -->
+    <div class="skill-card">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-plain.svg" alt="Bootstrap" width="48" height="48">
+      <div class="skill-info">
+        <p class="skill-name">Bootstrap</p>
+        <p class="skill-desc">Framework CSS responsive</p>
+      </div>
+    </div>
+
+    <!-- Tailwind CSS -->
+    <div class="skill-card">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind CSS" width="48" height="48">
+      <div class="skill-info">
+        <p class="skill-name">Tailwind CSS</p>
+        <p class="skill-desc">Utility-first CSS framework</p>
+      </div>
+    </div>
+
+    <!-- SCSS / Sass -->
+    <div class="skill-card">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sass/sass-original.svg" alt="SCSS / Sass" width="48" height="48">
+      <div class="skill-info">
+        <p class="skill-name">SCSS / Sass</p>
+        <p class="skill-desc">Preprocesador de estilos CSS</p>
+      </div>
+    </div>
+
+    <!-- JavaScript -->
+    <div class="skill-card">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="JavaScript" width="48" height="48">
+      <div class="skill-info">
+        <p class="skill-name">JavaScript</p>
+        <p class="skill-desc">Lenguaje de programación web</p>
+      </div>
+    </div>
+
+    <!-- jQuery -->
+    <div class="skill-card">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jquery/jquery-original.svg" alt="jQuery" width="48" height="48">
+      <div class="skill-info">
+        <p class="skill-name">jQuery</p>
+        <p class="skill-desc">Librería JavaScript para el DOM</p>
+      </div>
+    </div>
+
+    <!-- AJAX -->
+    <div class="skill-card">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="AJAX" width="48" height="48">
+      <div class="skill-info">
+        <p class="skill-name">AJAX</p>
+        <p class="skill-desc">Peticiones asíncronas al servidor</p>
+      </div>
+    </div>
+
+    <!-- HTML / CSS -->
+    <div class="skill-card">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="HTML / CSS" width="48" height="48">
+      <div class="skill-info">
+        <p class="skill-name">HTML / CSS</p>
+        <p class="skill-desc">Estructura y estilos de la web</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- =============================================
+     CSS: pegá esto en tu archivo .css
+============================================= -->
+<style>
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.skill-card {
+  background-color: rgba(0, 0, 0, 0.35);
+  border: 1px solid rgba(0, 238, 255, 0.2);
+  border-radius: 14px;
+  padding: 1rem 1.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-card:hover {
+  border-color: rgba(0, 238, 255, 0.7);
+  box-shadow: 0 0 12px rgba(0, 238, 255, 0.25);
+}
+
+.skill-card img {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+}
+
+.skill-name {
+  font-weight: 600;
+  font-size: 14px;
+  color: #fff;
+  margin: 0;
+}
+
+.skill-desc {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.55);
+  margin: 0;
+}
+</style>
