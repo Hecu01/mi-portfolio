@@ -63,13 +63,14 @@
                 <div class="image-header " style="margin-top: 15px; ">
                     <img src="assets/img/yo-enero-2026.jpg" alt="yo" width="300px" height="310px" draggable="false">
                 </div>
-                <div class="right-header" style="margin-top: -25px;">
+                <div class="right-header" style="margin-top: 0px">
                     <h1
                         style="font-size: 2.3em; color: #fff; border-bottom: 2px solid #fff; padding-bottom:10px; margin-bottom: 10px;">
                         Navegación</h1>
                     <a href="#biografia" class="button-nav" style="margin: 8x 0px;">Biografía</a>
                     <a href="#formacion-academica" class="button-nav" style="margin: 8px 0px;">Estudios</a>
-                    <a href="#proyectos" class="button-nav" style="margin: 8px 0px;">Proyectos</a>
+                    <a href="#proyectos-personales" class="button-nav" style="margin: 8px 0px;">Proyectos</a>
+                    <a href="#habilidades" class="button-nav" style="margin: 8px 0px;">Habilidades</a>
                     <a href="#contactar" class="button-nav" style="margin: 8px 0px;">Contactar</a>
 
                 </div>
@@ -85,7 +86,8 @@
                     <a href="#biografia" class="button-nav">Biografía</a>
                     <a href="#formacion-academica" class="button-nav">Estudios</a>
                     <a href="#proyectos" class="button-nav">Proyectos</a>
-                    <a href="#biografia" class="button-nav">Contactar</a>
+                    <a href="#habilidades" class="button-nav">Habilidades</a>
+                    <a href="#contactar" class="button-nav">Contactar</a>
 
                 </div>
             </div>
@@ -210,199 +212,182 @@
 
 
             </section>
-            <!-- Proyectos personales -->
-            <section class="contenedor-principal-biography col-12 proyectos-section" id="proyectos-personales">
-                <div class="col-12 flex justify-center">
-                    <h1 class="h1-section  mb-4  col-10  text-4xl" id="proyectos">Proyectos personales</h1>
+
+            <!-- Proyectos personales gemini-->            
+            <section class="w-full py-12 px-4 flex flex-col items-center " style="background-color: rgba(1, 141, 87, 0.233);; box-shadow: 0px 0px 3px rgb(0, 255, 242);" id="proyectos-personales">
+                <div class="mb-10 text-center">
+                    <h2 class="text-3xl font-bold tracking-widest text-white border-2 border-[#00ffcc]/20 bg-[#00ffcc]/5 px-10 py-4 rounded-md shadow-[0_0_15px_rgba(0,255,204,0.15)] uppercase">
+                        Proyectos Destacados
+                    </h2>
                 </div>
-                <div class="grid lg:row lg:flex justify-content-center flex-wrap px-2">
 
-                    <div class="bg-slate-50 mt-2 mb-5  text-black mx-4 h-fit article-proyecto "
-                        style="box-shadow: 0px 0px 5px #000; ">
-
-
-                        <div class="" style="position: relative">
-                            <img src="assets/img/proyecto-isft.jpg" alt="" draggable="false"
-                                style="border: 1px solid #fff">
-
-                            <span class="bg-green-600 p-1  text-white span-informativo">Proyecto finalizado</span>
-                        </div>
-                        <div class="p-2">
-
-                            <h6 class="text-xl underline font-semibold ">- Proyecto #1 - 3° Año Análisis de Sistemas
-                            </h6>
-                            <h6 class="text-xl underline">Formulario de preinscripción para el ISFT 38 vigente durante
-                                el 2024</h6>
-
-                            <details class="mb-2 mt-4">
-                                <summary>MÁS INFORMACIÓN DEL PROYECTO (CLICK AQUÍ)</summary>
-                                Proyecto de formulario para preinscripción para los aspirantes que quieran anotarse al
-                                Instituto Superior de Formación Técnica n°38 (ISFT 38) para estudiar en 2024, agilizando
-                                así el brindado de sus datos de residencia, nacimiento, académicos y personales.
-                                Formulario vigente durante el 2024
-                                <ul class="mt-2 items-proyectos">
-                                    <li><strong>Fecha de inicio</strong> [25/08/2023]</li>
-                                    <li class="my-1"><strong>Fecha de finalizacion:</strong> [16/10/2023]</li>
-                                    <li class="my-1"><strong>Estado del proyecto:</strong> <span
-                                            class="bg-green-500 p-1 text-white">Finalizado <i
-                                                class="fa-regular fa-circle-check"></i></span></li>
-                                    <li><strong>Horas dedicadas:</strong> 36 horas</li>
-                                </ul>
-                            </details>
-
-                            <div class="">
-                                <p class="my-1 p-0"><strong>Colaboradores:</strong>
-                                    Herrera Guillermo, Auce Ailén</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl w-full pb-5">
+                    
+                    <!-- CARD INTERACTIVA EXPANDIBLE -->
+                    <details class="group flex flex-col bg-white/5 border border-white/20 rounded-[24px] overflow-hidden shadow-2xl backdrop-blur-md transition-all duration-300 hover:translate-y-[-4px] hover:shadow-[0_12px_40px_rgba(0,0,0,0.4)] list-none [&_summary::-webkit-details-marker]:hidden h-fit">
+                        
+                        <!-- PARTE VISIBLE: Imagen y título básico -->
+                        <summary class="cursor-pointer focus:outline-none select-none [&::-webkit-details-marker]:hidden [&::marker]:content-['']">
+                            <div class="relative w-full h-56 overflow-hidden">
+                                <img src="assets/img/proyecto-sportivo.jpg" alt="E-commerce Sportivo" class="w-full h-full object-cover opacity-90">
+                                
+                                <span class="absolute top-4 right-4 flex items-center gap-1.5 bg-[#4eb5a6] text-white text-xs font-semibold px-3 py-1.5 rounded-full shadow-md border border-white/10">
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                    </svg>
+                                    Proyecto finalizado
+                                </span>
                             </div>
 
+                            <div class="p-6 pb-4 text-white">
+                                <span class="text-xs uppercase tracking-wider text-[#00ffcc] font-semibold">3° Año Análisis de Sistemas</span>
+                                <h3 class="text-xl font-bold text-white tracking-tight leading-snug mt-1">Tienda deportiva e-commerce "Sportivo"</h3>
+                                
+                                <!-- Botón indicador de desplegar -->
+                                <div class="mt-4 flex items-center gap-2 text-xs font-medium text-gray-300 group-open:text-[#00ffcc] transition-colors">
+                                    <span>MÁS INFORMACIÓN DEL PROYECTO</span>
+                                    <!-- La flecha rota sola 180 grados si está abierto -->
+                                    <svg class="w-4 h-4 transform transition-transform duration-300 group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                        </summary>
 
+                        <!-- PARTE OCULTA: Se despliega al hacer click -->
+                        <div class="px-6 pb-6 flex flex-col gap-3 text-white border-t border-white/5 pt-4 bg-black/10">
+                            <p class="text-sm text-gray-200/90 leading-relaxed font-normal">
+                                Proyecto e-commerce para una tienda ficticia deportiva online denominada "Sportivo", que permite el registro de usuarios, de ventas, de productos, búsquedas y filtrado de productos. Como objetivo final procesará pagos dentro de la aplicación.
+                            </p>
+
+                            <ul class="flex flex-col gap-2.5 mt-2 text-xs text-gray-300">
+                                <li class="flex items-center gap-3">
+                                    <svg class="w-4 h-4 text-[#00ffcc]/80" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                                    <span><strong class="text-white">Duración:</strong> 18/11/2023 - 16/12/2024</span>
+                                </li>
+                                <li class="flex items-center gap-3">
+                                    <svg class="w-4 h-4 text-[#00ffcc]/80" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                    <span><strong class="text-white">Tiempo invertido:</strong> +400 horas</span>
+                                </li>
+                                <li class="flex items-center gap-3">
+                                    <svg class="w-4 h-4 text-[#00ffcc]/80" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
+                                    <span><strong class="text-white">Colaboradores:</strong> Manetta Luciana</span>
+                                </li>
+                            </ul>
                         </div>
-                        <div class="bottom flex justify-between border-t-2 bottom-de-articles-proyectos">
-                            <div class="tec-usadas mr-5">
-                                <div class="grid m-2 " style="position: relative">
-                                    <h5 class="ml-1 font-semibold mb-2" style="margin-top: 0px">Tecnologías usadas</h5>
-                                    <div class="flex flex-wrap" style="margin-top: -5px">
-                                        <img src="assets/img/lenguajes/laravel.png" width="22px" alt=""
-                                            style="margin: 2px" draggable="false" title="Laravel"
-                                            onclick="alert('Framework Laravel.')">
-                                        <img src="assets/img/lenguajes/bootstrap.jpg" class="mx-1" width="22px" alt=""
-                                            style="margin: 2px" draggable="false" title="bootstrap 5"
-                                            onclick="alert('Framework bootstrap 5.')">
-                                        <img src="assets/img/lenguajes/ajax.jpg" class="mx-1" width="22px" alt=""
-                                            style="margin: 2px" draggable="false" title="AJAX"
-                                            onclick="alert('Librería de ajax y jquery.')">
-                                        <img src="assets/img/lenguajes/sass.png" class="mx-1" width="22px" alt=""
-                                            style="margin: 2px" draggable="false" title="SCSS"
-                                            onclick="alert('Lenguaje de programación SASS')">
-                                        <img src="assets/img/lenguajes/mysql.png" class="mx-1" width="36px" alt=""
-                                            style="margin: 2px" draggable="false" title="MySQL"
-                                            onclick="alert('Base de datos relacional Mysql')">
 
-                                    </div>
+                        <!-- PIE DE CARD: Tecnologías y Botones estables al fondo -->
+                        <div class="p-5 bg-black/20 border-t border-white/10 flex flex-col sm:flex-row justify-between items-center sm:items-center gap-4">
+    
+                            <div class="flex flex-col items-center sm:items-start gap-1 w-full sm:w-auto">
+                                <span class="text-[10px] uppercase tracking-wider text-gray-400 font-bold">Tecnologías</span>
+                                
+                                <div class="flex items-center justify-center sm:justify-start gap-2.5 mt-1.5 flex-wrap max-w-xs sm:max-w-md">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/laravel/laravel-original.svg" alt="Laravel" width="26" height="26" title="Laravel" class="object-contain">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind CSS" width="26" height="26" title="Tailwind CSS" class="object-contain">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg" alt="MySQL" width="34" height="26" title="MySQL" class="object-contain">
                                 </div>
                             </div>
 
-                            <div class="boton py-2  m-2 flex  items-center">
-                                <a href="https://urbine01.neocities.org/inscripcion/" target="_BLANK"
-                                    class="p-2 bg-cyan-600 flex items-center border hover:scale-105  text-white h-fit">WEB
-                                    <svg class="ml-1" xmlns="http://www.w3.org/2000/svg" height="16" width="16"
-                                        viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc. -->
-                                        <path fill="#ffffff"
-                                            d="M352 256c0 22.2-1.2 43.6-3.3 64H163.3c-2.2-20.4-3.3-41.8-3.3-64s1.2-43.6 3.3-64H348.7c2.2 20.4 3.3 41.8 3.3 64zm28.8-64H503.9c5.3 20.5 8.1 41.9 8.1 64s-2.8 43.5-8.1 64H380.8c2.1-20.6 3.2-42 3.2-64s-1.1-43.4-3.2-64zm112.6-32H376.7c-10-63.9-29.8-117.4-55.3-151.6c78.3 20.7 142 77.5 171.9 151.6zm-149.1 0H167.7c6.1-36.4 15.5-68.6 27-94.7c10.5-23.6 22.2-40.7 33.5-51.5C239.4 3.2 248.7 0 256 0s16.6 3.2 27.8 13.8c11.3 10.8 23 27.9 33.5 51.5c11.6 26 20.9 58.2 27 94.7zm-209 0H18.6C48.6 85.9 112.2 29.1 190.6 8.4C165.1 42.6 145.3 96.1 135.3 160zM8.1 192H131.2c-2.1 20.6-3.2 42-3.2 64s1.1 43.4 3.2 64H8.1C2.8 299.5 0 278.1 0 256s2.8-43.5 8.1-64zM194.7 446.6c-11.6-26-20.9-58.2-27-94.6H344.3c-6.1 36.4-15.5 68.6-27 94.6c-10.5 23.6-22.2 40.7-33.5 51.5C272.6 508.8 263.3 512 256 512s-16.6-3.2-27.8-13.8c-11.3-10.8-23-27.9-33.5-51.5zM135.3 352c10 63.9 29.8 117.4 55.3 151.6C112.2 482.9 48.6 426.1 18.6 352H135.3zm358.1 0c-30 74.1-93.6 130.9-171.9 151.6c25.5-34.2 45.2-87.7 55.3-151.6H493.4z" />
-                                    </svg>
-
+                            <div class="flex items-center gap-3 w-full sm:w-auto shrink-0">
+                                <a href="#" target="_blank" rel="noopener noreferrer" class="flex-1 sm:flex-initial flex items-center justify-center gap-1.5 text-xs font-bold bg-[#00ffcc] text-[#06332f] px-4 py-2.5 rounded-lg shadow-md hover:bg-[#00e6b8] hover:shadow-[0_0_15px_rgba(0,255,204,0.5)] hover:scale-[1.03] transition-all">
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9h18"></path></svg>
+                                    WEB
                                 </a>
-                                <a href="https://github.com/Hecu01/auce-herrera-urbine" target="_BLANK"
-                                    class="p-2 bg-slate-950 flex items-center border hover:scale-105  text-white h-fit">REPOSITORIO
-
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="ml-1" height="16" width="15.5"
-                                        viewBox="0 0 496 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc. -->
-                                        <path fill="#ffffff"
-                                            d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" />
-                                    </svg>
+                                <a href="#" target="_blank" rel="noopener noreferrer" class="flex-1 sm:flex-initial flex items-center justify-center gap-1.5 text-xs font-bold bg-white/10 text-white border border-white/20 px-4 py-2.5 rounded-lg hover:bg-white/20 hover:text-[#00ffcc] hover:border-[#00ffcc]/30 transition-all">
+                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.462-1.11-1.462-.908-.62.069-.061.069-.061 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.577.688.479C19.138 20.162 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+                                    REPOSITORIO
                                 </a>
                             </div>
+
                         </div>
-                    </div>
 
-                    <div class="bg-slate-50  mb-5 mt-2   text-black mx-4 h-fit article-proyecto "
-                        style="box-shadow: 0px 0px 5px #000; ">
+                    </details>
 
-                        <div class="" style="position: relative">
-                            <img src="assets/img/proyecto-sportivo.jpg" alt="" draggable="false"
-                                style="border: 1px solid #fff">
-
-                            <span class="bg-green-600 p-1  text-white span-informativo">Proyecto finalizado</span>
-                        </div>
-                        <div class="p-2 ">
-                            <h6 class="text-xl underline font-semibold">Proyecto #2 - 3° Año Análisis de Sistemas</h6>
-                            <h6 class="text-xl underline">Tienda deportiva e-commerce "Sportivo"</h6>
-
-                            <details class="mb-2 mt-4">
-                                <summary>MÁS INFORMACIÓN DEL PROYECTO (CLICK AQUÍ)</summary>
-                                Proyecto e-commerce para una tienda ficticia deportiva online denominada "Sportivo", que
-                                permite el registro de usuarios, de ventas, de productos, búsquedas y filtrado de
-                                productos, y como objetivo final procesará pagos dentro de la aplicación.
-                                <ul class="mt-2 items-proyectos">
-                                    <li><strong>Fecha de Inicio:</strong> [18/11/2023]</li>
-                                    <li><strong>Fecha de Finalización:</strong> [16/12/2024]</li>
-                                    <li class="my-1"><strong>Estado:</strong> <span
-                                            class="bg-green-500 p-1 text-white">Finalizado <i
-                                                class="fa-regular fa-circle-check"></i></span></li>
-                                    <li><strong>Horas dedicadas:</strong> +400 horas</li>
-                                </ul>
-                            </details>
-
-
-                            <div class="">
-                                <p class="my-1 p-0"><strong>Colaboradores:</strong>
-                                    Manetta Luciana
-                                </p>
+                    <details class="group list-none flex flex-col bg-white/5 border border-white/20 rounded-[24px] overflow-hidden shadow-2xl backdrop-blur-md transition-all duration-300 hover:translate-y-[-4px] hover:shadow-[0_12px_40px_rgba(0,0,0,0.4)] [&_summary::-webkit-details-marker]:hidden h-fit">
+    
+                        <summary class="cursor-pointer focus:outline-none select-none list-none [&::marker]:content-[''] flex flex-col">
+                            <div class="relative w-full h-56 overflow-hidden bg-black/20">
+                                <img src="assets/img/proyecto-isft.jpg" alt="Formulario ISFT 38" draggable="false" class="w-full h-full object-cover opacity-90">
+                                
+                                <span class="absolute top-4 right-4 flex items-center gap-1.5 bg-[#4eb5a6] text-white text-xs font-semibold px-3 py-1.5 rounded-full shadow-md border border-white/10">
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                    </svg>
+                                    Proyecto finalizado
+                                </span>
                             </div>
+
+                            <div class="p-6 pb-4 text-white flex-1">
+                                <span class="text-xs uppercase tracking-wider text-[#00ffcc] font-semibold">3° Año Análisis de Sistemas</span>
+                                <h3 class="text-xl font-bold text-white tracking-tight leading-snug mt-1">Formulario de preinscripción para el ISFT 38</h3>
+                                
+                                <div class="mt-4 flex items-center gap-2 text-xs font-medium text-gray-300 group-open:text-[#00ffcc] transition-colors">
+                                    <span>MÁS INFORMACIÓN DEL PROYECTO</span>
+                                    <svg class="w-4 h-4 transform transition-transform duration-300 group-open:rotate-180 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                        </summary>
+
+                        <div class="px-6 pb-6 flex flex-col gap-3 text-white border-t border-white/5 pt-4 bg-black/10">
+                            <p class="text-sm text-gray-200/90 leading-relaxed font-normal">
+                                Proyecto de formulario para preinscripción para los aspirantes que quieran anotarse al Instituto Superior de Formación Técnica n°38 (ISFT 38) para estudiar en 2024, agilizando así el brindado de sus datos de residencia, nacimiento, académicos y personales. Formulario vigente durante el 2024.
+                            </p>
+
+                            <ul class="flex flex-col gap-2.5 mt-2 text-xs text-gray-300">
+                                <li class="flex items-center gap-3">
+                                    <svg class="w-4 h-4 text-[#00ffcc]/80" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                                    <span><strong class="text-white">Duración:</strong> 25/08/2023 - 16/10/2023</span>
+                                </li>
+                                <li class="flex items-center gap-3">
+                                    <svg class="w-4 h-4 text-[#00ffcc]/80" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                    <span><strong class="text-white">Tiempo invertido:</strong> 36 horas</span>
+                                </li>
+                                <li class="flex items-center gap-3">
+                                    <svg class="w-4 h-4 text-[#00ffcc]/80" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
+                                    <span><strong class="text-white">Colaboradores:</strong> Herrera Guillermo, Auce Ailén</span>
+                                </li>
+                            </ul>
                         </div>
-                        <div class="bottom flex  justify-between border-t-2 bottom-de-articles-proyectos">
-                            <div class="tec-usadas mr-5">
-                                <div class="grid m-2 " style="position: relative">
-                                    <h5 class="ml-1 font-semibold mb-2" style="margin-top: 0px">Tecnologías usadas</h5>
-                                    <div class="flex flex-wrap" style="margin-top: -5px">
 
-
-                                        <img src="assets/img/lenguajes/jquery.png" class="mx-1" width="22px" alt=""
-                                            style="margin: 2px" draggable="false" title="Jquery"
-                                            onclick="alert('Librería jquery')">
-
-                                        <img src="assets/img/lenguajes/bootstrap.jpg" class="mx-1" width="22px" alt=""
-                                            style="margin: 2px" draggable="false" title="bootstrap 5"
-                                            onclick="alert('Framework bootstrap 5.')">
-
-                                        <img src="assets/img/lenguajes/laravel.png" width="22px" alt=""
-                                            style="margin: 2px" draggable="false" title="Laravel"
-                                            onclick="alert('Framework Laravel.')">
-
-                                        <img src="assets/img/lenguajes/tailwind.png" class="mx-1" width="22px" alt=""
-                                            style="margin: 2px" draggable="false" title="Tailwind CSS"
-                                            onclick="alert('Framework TailwindCSS')">
-
-                                        <img src="assets/img/lenguajes/mysql.png" class="mx-1" width="36px" alt=""
-                                            style="margin: 2px" draggable="false" title="MySQL"
-                                            onclick="alert('Base de datos relacional Mysql')">
-
-                                    </div>
+                        <div class="p-5 bg-black/20 border-t border-white/10 flex flex-col sm:flex-row justify-between items-center gap-4">
+                            
+                            <div class="flex flex-col items-center sm:items-start gap-1 w-full sm:w-auto">
+                                <span class="text-[10px] uppercase tracking-wider text-gray-400 font-bold">Tecnologías</span>
+                                
+                                <div class="flex items-center justify-center sm:justify-start gap-2.5 mt-1.5 flex-wrap max-w-xs sm:max-w-md">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/laravel/laravel-original.svg" alt="Laravel" width="26" height="26" title="Laravel" class="object-contain">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap" width="26" height="26" title="Bootstrap" class="object-contain">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jquery/jquery-original.svg" alt="jQuery/AJAX" width="26" height="26" title="AJAX & jQuery" class="object-contain">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sass/sass-original.svg" alt="SASS" width="26" height="26" title="SASS" class="object-contain">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg" alt="MySQL" width="34" height="26" title="MySQL" class="object-contain">
                                 </div>
                             </div>
 
-                            <div class="boton py-2  m-2 flex  items-center">
-                                <a onclick="alert('Todavía no desplegué la app.')" href="#proyectos"
-                                    class="p-2 bg-cyan-600 flex items-center border hover:scale-105  text-white h-fit">WEB
-                                    <svg class="ml-1" xmlns="http://www.w3.org/2000/svg" height="16" width="16"
-                                        viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc. -->
-                                        <path fill="#ffffff"
-                                            d="M352 256c0 22.2-1.2 43.6-3.3 64H163.3c-2.2-20.4-3.3-41.8-3.3-64s1.2-43.6 3.3-64H348.7c2.2 20.4 3.3 41.8 3.3 64zm28.8-64H503.9c5.3 20.5 8.1 41.9 8.1 64s-2.8 43.5-8.1 64H380.8c2.1-20.6 3.2-42 3.2-64s-1.1-43.4-3.2-64zm112.6-32H376.7c-10-63.9-29.8-117.4-55.3-151.6c78.3 20.7 142 77.5 171.9 151.6zm-149.1 0H167.7c6.1-36.4 15.5-68.6 27-94.7c10.5-23.6 22.2-40.7 33.5-51.5C239.4 3.2 248.7 0 256 0s16.6 3.2 27.8 13.8c11.3 10.8 23 27.9 33.5 51.5c11.6 26 20.9 58.2 27 94.7zm-209 0H18.6C48.6 85.9 112.2 29.1 190.6 8.4C165.1 42.6 145.3 96.1 135.3 160zM8.1 192H131.2c-2.1 20.6-3.2 42-3.2 64s1.1 43.4 3.2 64H8.1C2.8 299.5 0 278.1 0 256s2.8-43.5 8.1-64zM194.7 446.6c-11.6-26-20.9-58.2-27-94.6H344.3c-6.1 36.4-15.5 68.6-27 94.6c-10.5 23.6-22.2 40.7-33.5 51.5C272.6 508.8 263.3 512 256 512s-16.6-3.2-27.8-13.8c-11.3-10.8-23-27.9-33.5-51.5zM135.3 352c10 63.9 29.8 117.4 55.3 151.6C112.2 482.9 48.6 426.1 18.6 352H135.3zm358.1 0c-30 74.1-93.6 130.9-171.9 151.6c25.5-34.2 45.2-87.7 55.3-151.6H493.4z" />
-                                    </svg>
-
+                            <div class="flex items-center gap-3 w-full sm:w-auto shrink-0">
+                                <a href="https://urbine01.neocities.org/inscripcion/" target="_blank" rel="noopener noreferrer" class="flex-1 sm:flex-initial flex items-center justify-center gap-1.5 text-xs font-bold bg-[#00ffcc] text-[#06332f] px-4 py-2.5 rounded-lg shadow-md hover:bg-[#00e6b8] hover:shadow-[0_0_15px_rgba(0,255,204,0.5)] hover:scale-[1.03] transition-all">
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9h18"></path></svg>
+                                    WEB
                                 </a>
-                                <a href="https://github.com/Hecu01/urbine-manetta" target="_BLANK"
-                                    class="p-2 bg-slate-950 flex items-center border hover:scale-105  text-white h-fit">REPOSITORIO
-
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="ml-1" height="16" width="15.5"
-                                        viewBox="0 0 496 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc. -->
-                                        <path fill="#ffffff"
-                                            d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" />
-                                    </svg>
+                                <a href="https://github.com/Hecu01/auce-herrera-urbine" target="_blank" rel="noopener noreferrer" class="flex-1 sm:flex-initial flex items-center justify-center gap-1.5 text-xs font-bold bg-white/10 text-white border border-white/20 px-4 py-2.5 rounded-lg hover:bg-white/20 hover:text-[#00ffcc] hover:border-[#00ffcc]/30 transition-all">
+                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.462-1.11-1.462-.908-.62.069-.061.069-.061 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.577.688.479C19.138 20.162 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+                                    REPOSITORIO
                                 </a>
                             </div>
-
                         </div>
-                    </div>
 
-
-
+                    </details>
                 </div>
-
             </section>
-            <section class="pt-5" id="habilidades" style="min-height: 600px;   box-shadow: 0px 0px 5px #00fff2;">
+
+
+
+
+            <section class="pt-5" id="habilidades" style="min-height: 600px;   box-shadow: 0px 0px 3px rgb(0, 255, 242);">
                 <div class="col-12 flex justify-center mb-5">
-                    <h1 class="h1-section  mb-4  col-10  text-4xl" id="proyectos">Habilidades</h1>
+                    <h1 class="h1-section  mb-4  col-10  text-4xl" id="habilidades">Habilidades</h1>
                 </div>
                 <div class=" flex justify-center  mb-[50px]">
 
@@ -418,8 +403,7 @@
                             </div>
                         <!-- PHP -->
                         <div class="skill-card">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-plain.svg" alt="PHP"
-                                width="48" height="48">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" alt="PHP" width="34" height="26" title="PHP" class="object-contain">
                             <div class="skill-info">
                                 <p class="skill-name">PHP</p>
                                 <p class="skill-desc">Lenguaje backend de servidor web</p>
@@ -428,8 +412,9 @@
 
                         <!-- MySQL -->
                         <div class="skill-card">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
-                                alt="MySQL" width="48" height="48">
+                            
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg" alt="MySQL" width="68" height="68" title="MySQL" >
+
                             <div class="skill-info">
                                 <p class="skill-name">MySQL</p>
                                 <p class="skill-desc">Base de datos relacional</p>
@@ -438,8 +423,7 @@
 
                         <!-- Bootstrap -->
                         <div class="skill-card">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-plain.svg"
-                                alt="Bootstrap" width="48" height="48">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap" width="26" height="26" title="Bootstrap 5" class="object-contain">
                             <div class="skill-info">
                                 <p class="skill-name">Bootstrap</p>
                                 <p class="skill-desc">Framework CSS responsive</p>
@@ -487,8 +471,7 @@
 
                         <!-- AJAX -->
                         <div class="skill-card">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
-                                alt="AJAX" width="48" height="48">
+                            <img src="https://explore-feed.github.com/topics/ajax/ajax.png" style="border-radius: 100%;" alt="AJAX" width="26" height="26" title="AJAX" class="object-contain">
                             <div class="skill-info">
                                 <p class="skill-name">AJAX</p>
                                 <p class="skill-desc">Peticiones asíncronas al servidor</p>
@@ -522,7 +505,7 @@
                     <div class="contacto-info">
                         <div class="perfil-foto-box">
                             <!-- Aquí usas la foto que me pasaste "IMG_20240805_102957_3.jpg" subida a tus assets -->
-                            <img src="assets/img/yo-solo.png" alt="Valentin Urbine" class="foto-perfil">
+                            <img src="assets/img/yo-solo.png" draggable="false" alt="Valentin Urbine" class="foto-perfil">
                             <span class="foto-nombre">Valentin Urbine</span>
                         </div>
                         
